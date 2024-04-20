@@ -1,0 +1,124 @@
+.color-strip-container {
+    height: 10px;
+    width: 100%;
+    display: flex;
+}
+.color-strip {
+    height: 100%; 
+    flex: 1; 
+}
+.color-strip:first-child {
+    flex-grow: 3;
+}
+.red {
+    background-color: #FF6000;
+}
+
+.orange {
+    background-color: #49C7ED;
+}
+
+.yellow {
+    background-color: #7723DB;
+}
+
+.green {
+    background-color: #57B900;
+}
+
+.blue {
+    background-color: #5D196A;
+}
+.nav-item {
+    border-right: 1px solid #ccc; 
+    padding-right: 10px; 
+}
+.nav-item:last-child {
+    border-right: none; 
+}
+.nav-link {
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse {
+        justify-content: center;
+    }
+    .slider-container {
+        overflow: hidden;
+    }
+    
+    .slider {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    
+    .slide {
+        flex: 0 0 100%;
+    }
+    
+    .carousel-control-prev-icon{
+        display: none;
+    }
+    
+    .carousel-control-next-icon{
+        display: none ;
+    }
+    
+    .navbar-nav{
+        display: none;
+    }
+    .bgImage{
+        display: none;
+    }
+    #slide1{
+        width: 100%;
+        height: 20px;
+    }
+    .navbar-collapse {
+        max-height: 300px; 
+    }
+   
+    .form-control {
+        width: calc(100% - 120px); 
+        border-top-right-radius: 5px !important;
+        border-bottom-right-radius: 5px !important;
+    }
+    
+    .input-group{
+        margin-left: 0 !important;
+        width: 70vh !important;
+        border-radius: 20px !important;
+        display: inline-flex !important;
+    }
+    .bg-light {
+        --bs-bg-opacity: none!important;
+    }
+
+    .input-group-append{
+        display: none;
+    }
+    .collapse{
+        display: flex !important;
+    }
+    .color-strip-container {
+        display: none;
+    }
+    
+}
