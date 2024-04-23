@@ -6,7 +6,7 @@ app = Flask(__name__)
 def connect_to_mysql():
     try:
         conn = mysql.connector.connect(
-            host="b09954e6654d",
+            host="se3355midtermdb.mysql.database.azure.com",
             user="midtermizzetcemibik",
             password="12345Izo",
             database="19070001035_izzetcemibik_midtermdatabase"
